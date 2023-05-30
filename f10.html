@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajo final</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="f10.css" />
+    <script src="f10.js" defer></script>
+  </head>
+  <body>
+    <div class="logotipo"><img src="images/logo.svg" alt="" /></div>
+    <div class="bloques">
+      <div class="parte1">
+        <label for="efectivo1">Bill</label>
+        <input
+          type="number"
+          class="input efectivo1"
+          id="efectivo1"
+          value="0.0"
+        />
+        <label for="seleccion">Select Tip %</label>
+        <div class="monto">
+          <div class="calcu monto-5">5%</div>
+          <div class="calcu monto-10">10%</div>
+          <div class="calcu active-monto monto-15">15%</div>
+          <div class="calcu monto-25">25%</div>
+          <div class="calcu monto-50">50%</div>
+          <div id="monto-amedida">
+            <input class="monto-amedida" type="number" placeholder="Custom" />
+          </div>
+        </div>
+        <div class="agregarPer">
+          <label for="dividir-per">Number of People</label>
+          <label for="dividir-per" class="error">Can't be Zero</label>
+        </div>
+        <input
+          type="number"
+          class="input dividir-per"
+          id="dividir-per"
+          value="1"
+        />
+      </div>
+
+      <div class="parte2">
+        <div class="monto-personalizado">
+          <div class="texto">
+            <p>Tip Amount</p>
+            <p class="persona">/ person</p>
+          </div>
+          <div class="cantidad" id="monto-personalizado">$0.00</div>
+        </div>
+        <div class="total">
+          <div class="texto">
+            <p>Total</p>
+            <p class="persona">/ person</p>
+          </div>
+          <div class="cantidad" id="monto-total">$0.00</div>          
+        </div>
+          <div id="btnReset" class="reset" >RESET</div>
+      </div>
+    </div>
+  </body>
+</html>
